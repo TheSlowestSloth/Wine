@@ -1,0 +1,215 @@
+@media screen and (max-width: 640px) {
+
+    #containers #menu{
+        height: 60vh;
+        width: 90vw;
+        margin: 5vh auto;
+    }
+
+    #menu{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #accueil #delete{
+        display: none;
+    }
+
+    #containers .container{
+        visibility: hidden;
+        display: hidden;
+    }
+
+    #login{
+        visibility: hidden;
+    }
+
+    #menu .buttonCat{
+        height: 50px;
+        width: 50px;
+        font-size: 0;
+    }
+
+    #containers #vContent{
+        height: 55vh;
+        width: 60vw;
+        left: 25vw;
+        top: 20.5vh;
+        display: flex;
+    }
+
+    #addVin, #addVendeur{
+        display: none;
+    }
+
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+    overflow: hidden;
+}
+
+#accueil{
+    display: none;
+}
+
+#login div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: 250px;
+    width: 150px;
+    margin: 100px auto;
+    background-color: rgb(240, 229, 216);
+}
+
+#info{
+    width: 400px;
+    height: 180px;
+    margin: 20px auto;
+    bottom: 0px;
+    left: calc(50% - 100px);
+    position: absolute;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#menu{
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 510px;
+    width: 850px;
+}
+
+.buttonCat{
+    display: none;
+    height: 50px;
+    width: 200px;
+    background-color: grey;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container{
+    height: 120px;
+    width: 200px;
+    margin: 20px 10px;
+    overflow-y: scroll;
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#vendeurs{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    margin: 10px 0;
+}
+
+.vendeur{
+    cursor: pointer;
+    border-radius: 8px;
+    height: 60px;
+    width: 100px;
+    background-color: rgb(114, 27, 27);
+    display: flex;
+    margin: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 229, 216);
+}
+
+.item{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.imageInfo{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+p{
+    width: 200px;
+}
+
+#delete{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 750px;
+    top: 543px;
+    position: absolute;
+}
+
+img{
+    height: 80%;
+}
+
+.rouge{
+    background-color: rgb(114, 27, 27);
+}
+
+.blanc{
+    background-color: rgb(240, 229, 216);
+}
+
+.rose{
+    background-color: rgb(212, 103, 103);
+}
+
+#vContent{
+
+    width: 600px;
+    height: 400px;
+    left: 230px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    margin: 18px;
+    position: absolute;
+    top: 133px;
+    flex-wrap: wrap;
+    display: none;
+
+}

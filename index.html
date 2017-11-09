@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>DragOnDrop</title>
+</head>
+<body>
+
+    <section id="login">
+
+        <h1>Login</h1>
+        <div>
+
+            <label>Username</label>
+            <input type="text" id="username"/>
+
+        </div>
+
+        <div>
+
+            <label>Password</label>
+            <input type="password" id="password"/>
+            
+        </div>
+
+        <input type="submit" value="Login" id="loginbutton"/>
+        <input type="submit" value="No Account" id="noaccount"/>
+
+    </section>
+
+    <section id="accueil">
+
+        <div id="addVendeur">
+            <input type="text" id="vendeurName"/>
+            <input type="submit" value="Ajouter un vendeur" id="addNewVendor">
+        </div>
+
+        <div id="vendeurs">  
+        </div>
+        
+        <div id="containers">  
+
+            <div id="menu">
+            </div>
+
+            <div id="vContent">
+            </div>
+
+            <div id="addVin">
+                <select id="select">
+                </select><br>
+                <input type="text" id="name" placeholder="Nom du vin"/><br>
+                <input type="text" id="year" placeholder="Année"/><br>
+                <input type="text" id="description" placeholder="Description"/><br>
+                <input type="text" id="image" placeholder="Image URL"/><br>
+                <input type="submit" value="Ajouter à la selection" id="addNewVin">
+            </div>
+        
+        </div>
+
+        <div id="delete">
+            <img src="poubelle.jpg"/>
+        </div>
+
+        <div>
+            <div id="info">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        System.import('main')
+          .catch(function(err){ console.error(err); });
+    </script>
+
+</body>
+</html>
